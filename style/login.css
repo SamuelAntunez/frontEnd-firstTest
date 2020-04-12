@@ -1,0 +1,95 @@
+
+
+#LoginBox {
+    width: 320px;
+    height: 450px;
+    background-color: black;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    position:absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 30px;
+}
+
+#LoginBox #LogoLogin {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    position: absolute;
+    top: -85px;
+    left: calc(50% - 75px);
+}
+
+#LoginBox h1 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 22px;
+    padding: 15px 0;
+
+}
+
+#LoginBox label {
+    font-family: sans-serif;
+    display: block;
+    padding: 5px 0; 
+    font-weight: bold;
+}
+
+#LoginBox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#LoginBox input[type="text"],
+#LoginBox input[type="password"] {
+    border: none;
+    background: none;
+    height: 40px;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+.botonLog {
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 30px;
+}
+
+#LoginBox a {
+    display: block;
+}
+
+
+.botonRegister {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 30px;
+    margin-bottom: 5px;
+}
+
+.botonRegister a:link,
+.botonRegister a:visited,
+.botonRegister a:active {
+    color: black;
+    text-decoration: none;
+}
+
+.botonRegister a:hover {
+    color: darkgray;
+}
+
+.botonLog:hover {
+    color: darkgray;
+}
