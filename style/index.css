@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: url(../img/ubuntu-black-1440x900.jpg) no-repeat center top;
+    background-size: cover;
+
+}
+
+#barra {
+    position: fixed;
+    width: 200px;
+    background: black;
+    height: 100%;
+    left: -200px;
+    transition: all 300ms linear;
+}
+
+.botonbarra {
+    position: absolute;
+    left: 220px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+a:link,
+a:visited,
+a:active{
+    color: darkgray;
+
+}
+a:hover{
+    color: white;
+}
+#barra.active {
+    left: 0px;
+}
+
+.botonbarra:hover {
+    color: darkgrey;
+}
+
+#barra ul li {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgba(230, 230, 230, 0.9);;
+}
+
+#logo {
+    display: block;
+    width: 150px;
+    border-radius: 75px;
+    margin: 0 auto;
+}

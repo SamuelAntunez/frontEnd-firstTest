@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link  rel="icon"   href="img/descarga.png" type="image/png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Samuel - Primera Prueba</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/register.css">
+        <!-- sweet alert -->
+        <link rel="stylesheet" href="sweetalert/sweetalert2.min.css">
+</head>
+<body>
+    <div id="barra">
+        <!-- BARRA LATERAL -->
+        <div class="botonbarra">
+            <span>&#9776;</span>
+        </div>
+        <ul>
+            <li><img src="img/Logo.jpg" alt="LogoHiro" id="logo"></li>
+            <li> <a href="index.html" style="text-decoration: none;">Home Page</a></li>
+            <li><a href="login.html" style="text-decoration: none;">Login</a></li>
+            <li><a href="register.html" style="text-decoration: none;">Register</a></li>
+        </ul>
+
+    </div>
+    <div>
+        <div id="LoginBox">
+            <img src="img/Logo.jpg" alt="LogoHiro" id="LogoLogin">
+            <h1>Register<span> Here</span></h1>
+            <form>
+                <!-- NOMBRE -->
+                <p>
+                <label for="Nombre">Name</label>
+                <Input type="text" placeholder="Name"></Input>
+                </p>
+                <!-- APELLIDO -->
+                <p>
+                    <label for="Apellido">Last Name </label>
+                    <Input type="text" placeholder="Last Name"></Input>
+                </p>
+                <!-- EMAIL -->
+                <p>
+                    <label for="email">email</label>
+                    <Input type="email" placeholder="example@email.com"></Input>
+                </p>
+                <!-- TELEFONO -->
+                <p>
+                    <label for="Phone">Phone</label>
+                    <Input type="tel" placeholder="123-567-8901"></Input>
+                </p>
+                <!-- PASSWORD -->
+                <p>
+                    <label for="Password">Password</label>
+                    <Input type="password" placeholder="Enter Password"></Input> 
+                </p>
+                <!-- REPEAT PASSWORD -->
+                <p>
+                    <label for="Password">Repeat Password</label>
+                    <Input type="password" placeholder="Repeat Password"></Input> 
+                </p>
+    
+                <!-- <input class="botonLog" type="submit" value="Login"> -->
+                
+                <input class="botonRegister" type="button" value="Register" onclick=" 
+                Swal.fire({
+                    title: 'Felicidades',
+                    text: '¡Se ha registrado con éxito!',
+                    padding: '1rem',
+                    confirmButtonColor: '#F85E3D',
+                    background: 'black',
+                })">
+                <button class="botonLog"><a href="login.html">Login</a></button>
+
+    
+            </form>
+        </div>
+        <script src="js/main.js"></script>
+            <!-- sweet alert -->
+    <script src="sweetalert/sweetalert2.all.min.js"></script>
+</body>
+</html>
